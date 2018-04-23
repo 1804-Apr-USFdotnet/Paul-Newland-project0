@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRestaurantsProject0", "ConsoleRestaurantsProject0\ConsoleRestaurantsProject0.csproj", "{34103902-AEC6-4072-84E8-2B07C286F5DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{5AF7BA14-C869-4727-A3BE-6FC978DD64C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeTest", "PalindromeTest\PalindromeTest.csproj", "{5132B0FE-DC03-4E88-8C2D-EB62E19A9CC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{34103902-AEC6-4072-84E8-2B07C286F5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34103902-AEC6-4072-84E8-2B07C286F5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34103902-AEC6-4072-84E8-2B07C286F5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF7BA14-C869-4727-A3BE-6FC978DD64C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF7BA14-C869-4727-A3BE-6FC978DD64C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF7BA14-C869-4727-A3BE-6FC978DD64C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF7BA14-C869-4727-A3BE-6FC978DD64C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5132B0FE-DC03-4E88-8C2D-EB62E19A9CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5132B0FE-DC03-4E88-8C2D-EB62E19A9CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5132B0FE-DC03-4E88-8C2D-EB62E19A9CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5132B0FE-DC03-4E88-8C2D-EB62E19A9CC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
