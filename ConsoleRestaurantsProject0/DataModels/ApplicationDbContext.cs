@@ -9,9 +9,9 @@ namespace ConsoleRestaurantsProject0.DataModels
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<Restaurant> Restaurant { get; set; }
-        public DbSet<Review> Review { get; set; }
-        public DbSet<Address> Address { get; set; }
+        public DbSet<Restaurant> Restaurants { get; set; }
+        public DbSet<Review> Reviews { get; set; }
+        public DbSet<Address> Addresses { get; set; }
 
         public ApplicationDbContext()
         {
