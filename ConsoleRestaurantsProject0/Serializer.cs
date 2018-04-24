@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace ConsoleRestaurantsProject0
 {
-    class Serializer
+    public class Serializer
     {
         private readonly ApplicationDbContext _context;
 
@@ -32,7 +32,7 @@ namespace ConsoleRestaurantsProject0
             return JsonConvert.SerializeObject(reviews);
         }
 
-        public List<T> ImportObjectsJson<T>(string file)
+        public List<T> ImportObjectsListJson<T>(string file)
         {
             var list = new List<T>();
 
