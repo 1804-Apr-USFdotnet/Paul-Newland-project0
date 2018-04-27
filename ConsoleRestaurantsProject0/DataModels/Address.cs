@@ -10,7 +10,7 @@ namespace ConsoleRestaurantsProject0.DataModels
     {
         public int Id { get; set; }
         public virtual Restaurant Restaurant { get; set; }
-        public string Steet { get; set; }
+        public string Street { get; set; }
         public string City { get; set; }
         public string State { get; set; }
         public string Zip { get; set; }

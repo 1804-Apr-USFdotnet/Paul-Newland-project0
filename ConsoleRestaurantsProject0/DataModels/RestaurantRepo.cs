@@ -19,7 +19,7 @@ namespace ConsoleRestaurantsProject0.DataModels
 
         public List<Restaurant> GetRestaurants()
         {
-            return _context.Restaurants.ToList();
+            return _context.Restaurants.Include(r => r.Address).ToList();
         }
 
         public double GetAverageRating(int restaurantId)

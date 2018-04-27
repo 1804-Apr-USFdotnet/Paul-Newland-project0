@@ -65,6 +65,18 @@
     <Compile Include="Migrations\201804242252186_AddRatingToReviews.Designer.cs">
       <DependentUpon>201804242252186_AddRatingToReviews.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804271448231_InitialRestaurantReferenceData.cs" />
+    <Compile Include="Migrations\201804271448231_InitialRestaurantReferenceData.Designer.cs">
+      <DependentUpon>201804271448231_InitialRestaurantReferenceData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804271533580_ChangeColumnSteetToStreetForAddresses.cs" />
+    <Compile Include="Migrations\201804271533580_ChangeColumnSteetToStreetForAddresses.Designer.cs">
+      <DependentUpon>201804271533580_ChangeColumnSteetToStreetForAddresses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804271536244_InitialAddressReferenceData.cs" />
+    <Compile Include="Migrations\201804271536244_InitialAddressReferenceData.Designer.cs">
+      <DependentUpon>201804271536244_InitialAddressReferenceData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,6 +92,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804242252186_AddRatingToReviews.resx">
       <DependentUpon>201804242252186_AddRatingToReviews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804271448231_InitialRestaurantReferenceData.resx">
+      <DependentUpon>201804271448231_InitialRestaurantReferenceData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804271533580_ChangeColumnSteetToStreetForAddresses.resx">
+      <DependentUpon>201804271533580_ChangeColumnSteetToStreetForAddresses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804271536244_InitialAddressReferenceData.resx">
+      <DependentUpon>201804271536244_InitialAddressReferenceData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

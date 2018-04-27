@@ -15,7 +15,7 @@ namespace ConsoleRestaurantsProject0.DataModels
 
         public ApplicationDbContext()
         {
-
+            // config goes here
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
