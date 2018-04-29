@@ -22,6 +22,50 @@ namespace ConsoleRestaurantsProject0.DataModels
             return _context.Restaurants.Include(r => r.Address).ToList();
         }
 
+        public Restaurant GetRestaurant(int id)
+        {
+            return _context.Restaurants.SingleOrDefault(r => r.Id == id);
+        }
+
+        public void CreateRestaurant(string name, string street, string city, string state, string zip)
+        {
+            var restaurant = new Restaurant()
+            {
+                Name = name,
+                Address = new Address()
+                {
+                    Street = street,
+                    City = city,
+                    State = state,
+                    Zip = zip
+                }
+            };
+
+            _context.Restaurants.Add(restaurant);
+            _context.SaveChanges();
+        }
+
+        public void UpdateRestaurant(string name, string newName)
+        {
+            var restaurant = GetRestaurantByName(name);
+            if (restaurant == null) return;
+            restaurant.Name = newName;
+            _context.SaveChanges();
+        }
+
+        public void DeleteRestaurant(string name)
+        {
+            var restaurant = GetRestaurantByName(name);
+            if (restaurant == null) return;
+            _context.Restaurants.Remove(restaurant);
+            _context.SaveChanges();
+        }
+
+        public Restaurant GetRestaurantByName(string name)
+        {
+            return _context.Restaurants.SingleOrDefault(r => r.Name == name);
+        }
+
         public double GetAverageRating(int restaurantId)
         {
             var restaurant = _context.Restaurants.Find(restaurantId);
