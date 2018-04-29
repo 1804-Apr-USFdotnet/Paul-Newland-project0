@@ -13,5 +13,10 @@ namespace ConsoleRestaurantsProject0.DataModels
         public int Id { get; set; }
         public string Description { get; set; }
         public int Rating { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Rating} Star(s): {Description}";
+        }
     }
 }

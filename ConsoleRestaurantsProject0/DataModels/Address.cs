@@ -14,5 +14,10 @@ namespace ConsoleRestaurantsProject0.DataModels
         public string City { get; set; }
         public string State { get; set; }
         public string Zip { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Street}, {City}, {State} {Zip}";
+        }
     }
 }

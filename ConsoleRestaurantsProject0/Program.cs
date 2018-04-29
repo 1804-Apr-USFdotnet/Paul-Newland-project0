@@ -11,9 +11,12 @@ namespace ConsoleRestaurantsProject0
     {
         static void Main(string[] args)
         {
-            var r = new RestaurantRepo();
-            var restaurants = r.GetRestaurants();
-            Console.WriteLine(restaurants.Count());
+            var restaurantRepo = new RestaurantRepo();
+            var restaurants = restaurantRepo.GetRestaurants();
+            foreach (var r in restaurants)
+            {
+                Console.WriteLine(r);
+            }
         }
     }
 }

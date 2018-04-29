@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleRestaurantsProject0.DataModels
 {
-    class ReviewRepo
+    public class ReviewRepo
     {
         private readonly ApplicationDbContext _context;
 
