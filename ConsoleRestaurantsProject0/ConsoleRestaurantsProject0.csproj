@@ -58,6 +58,7 @@
     <Compile Include="DataModels\RestaurantRepo.cs" />
     <Compile Include="DataModels\Review.cs" />
     <Compile Include="DataModels\ReviewRepo.cs" />
+    <Compile Include="Lib\HelperLibrary.cs" />
     <Compile Include="Migrations\201804231758017_InitialMigration.cs" />
     <Compile Include="Migrations\201804231758017_InitialMigration.Designer.cs">
       <DependentUpon>201804231758017_InitialMigration.cs</DependentUpon>
