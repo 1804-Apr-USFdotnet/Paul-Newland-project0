@@ -79,6 +79,10 @@
     <Compile Include="Migrations\201804271536244_InitialAddressReferenceData.Designer.cs">
       <DependentUpon>201804271536244_InitialAddressReferenceData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804300120285_AddReferenceDataToReviews.cs" />
+    <Compile Include="Migrations\201804300120285_AddReferenceDataToReviews.Designer.cs">
+      <DependentUpon>201804300120285_AddReferenceDataToReviews.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804271536244_InitialAddressReferenceData.resx">
       <DependentUpon>201804271536244_InitialAddressReferenceData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804300120285_AddReferenceDataToReviews.resx">
+      <DependentUpon>201804300120285_AddReferenceDataToReviews.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

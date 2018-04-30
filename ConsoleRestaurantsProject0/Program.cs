@@ -19,11 +19,13 @@ namespace ConsoleRestaurantsProject0
             {
                 Console.WriteLine("What would you like to do?");
                 Console.WriteLine("Enter 'restaurants' to see Restaurants");
+                Console.WriteLine("Enter 'highest rated' to see the highest rated restaurant");
+                Console.WriteLine("Enter 'sorted' to see the sorted restaurants by name");
                 Console.WriteLine("Enter 'end' to end program");
 
                 input = Console.ReadLine();
 
-                if (String.IsNullOrEmpty(input))
+                if (string.IsNullOrEmpty(input))
                     input = "";
 
                 if (input.ToLower() == "restaurants")
@@ -33,9 +35,18 @@ namespace ConsoleRestaurantsProject0
                         Console.WriteLine(r);
                     }
                 }
-            }
 
-            // HelperLibrary.SortRestaurantsByName(restaurants)
+                if(input.ToLower() == "highest rated")
+                    Console.WriteLine(restaurantRepo.GetTopRatedRestaurant());
+
+                if (input.ToLower() == "sorted")
+                {
+                    foreach (var r in HelperLibrary.SortRestaurantsByName(restaurants))
+                    {
+                        Console.WriteLine(r);
+                    }
+                }
+            }
         }
     }
 }
